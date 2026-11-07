@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Storico indipendente in italiano degli aggiornamenti OTA LeapOS per Leapmotor B10 BEV e REEV.">
+  <title>Leapmotor B10 OTA — in italiano</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow"><span class="dot"></span> MONITORAGGIO INDIPENDENTE</div>
+      <h1>Leapmotor B10 <span>OTA</span></h1>
+      <p class="lead">Aggiornamenti LeapOS, novità dell’infotainment e segnalazioni dei proprietari. Tradotti in italiano, con fonti e livello di attendibilità.</p>
+      <div class="hero-meta">
+        <span id="updated">Caricamento ultimo controllo…</span>
+        <a href="https://leapmotor.bwwb.de/modelle/b10/" target="_blank" rel="noopener">Fonte originale tedesca ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="notice">
+      <strong>Progetto indipendente.</strong> Non è affiliato a Leapmotor o Stellantis. Le segnalazioni della community non equivalgono a conferme del costruttore.
+    </section>
+
+    <section class="stats" aria-label="Riepilogo">
+      <div class="stat"><span class="stat-label">Voci archiviate</span><strong id="count">—</strong></div>
+      <div class="stat"><span class="stat-label">Ultima versione BEV</span><strong id="bev">—</strong></div>
+      <div class="stat"><span class="stat-label">Ultima versione REEV</span><strong id="reev">—</strong></div>
+    </section>
+
+    <section class="toolbar" aria-label="Filtri">
+      <label class="search-label" for="search">Cerca per versione, funzione o problema</label>
+      <input id="search" type="search" placeholder="Es. 3.51.30, CarPlay, volume…" autocomplete="off">
+      <div class="filters">
+        <label>Modello
+          <select id="model">
+            <option value="all">BEV + REEV</option>
+            <option value="BEV">Solo BEV</option>
+            <option value="REEV">Solo REEV</option>
+            <option value="both">Comuni / non specificato</option>
+          </select>
+        </label>
+        <label>Attendibilità
+          <select id="status">
+            <option value="all">Tutte le fonti</option>
+            <option value="official">Ufficiale</option>
+            <option value="community">Community / stampa</option>
+            <option value="rumor">Rumor / non confermato</option>
+          </select>
+        </label>
+        <label>Argomento
+          <select id="topic">
+            <option value="all">Tutti gli argomenti</option>
+            <option value="infotainment">Infotainment / audio</option>
+            <option value="features">Funzioni</option>
+            <option value="bugs">Problemi / correzioni</option>
+          </select>
+        </label>
+      </div>
+      <div class="toolbar-bottom">
+        <span id="results">Caricamento archivio…</span>
+        <button id="reset" type="button">Azzera filtri</button>
+      </div>
+    </section>
+
+    <section id="entries" class="entries" aria-live="polite">
+      <div class="empty">Caricamento archivio…</div>
+    </section>
+    <footer>
+      <p>Le traduzioni automatiche possono contenere errori. Per decisioni importanti, apri sempre la fonte originale.</p>
+      <p>Fonte monitorata: <a href="https://leapmotor.bwwb.de/modelle/b10/" target="_blank" rel="noopener">Leapmotor DACH — B10 BEV &amp; REEV OTA-Historie</a>.</p>
+      <p class="small">La pagina viene aggiornata da un processo automatico GitHub Actions. Il controllo giornaliero può slittare per limiti della piattaforma.</p>
+    </footer>
+  </main>
+  <script src="assets/app.js"></script>
+</body>
+</html>
